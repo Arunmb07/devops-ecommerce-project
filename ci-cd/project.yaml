@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Project
+metadata:
+  name: ecommerce-project
+spec:
+  sourceRepos:
+    - 'https://github.com/your-username/devops-ecommerce-project.git'
+  destinations:
+    - namespace: default
+      server: 'https://kubernetes.default.svc'
+
